@@ -53,7 +53,9 @@ void ProncessOn()
 
 #define NUM 101
 #define S_Num 5
-extern void ProncessOn();
+extern void ProncessOn();//为啥在头文件中对函数的声明前加上extern
+//明确告知编译器该函数在其他源文件（.c/.cpp）中定义!
+
 ```
 
 ### 总结
